@@ -6,7 +6,6 @@ A simple command-line interface Morse code translator written in Python.
 ## Usage
 Run `main.py`.
 
-
 | Command | Definition |
 | :-----: | :--------: |
 | morse | Convert a string into Morse code |
