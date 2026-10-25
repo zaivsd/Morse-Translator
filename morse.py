@@ -75,21 +75,11 @@ def convert(string):
 
 
 def translate(morse):
-    morse_chars = []
+    morse_chars = morse.split()
 
-    while not morse in morse_alphabet.values():
-
-        morse_char = morse[:morse.find(" ")]
-
+    for morse_char in morse_chars:
         if not morse_char in morse_alphabet.values():
-            return "Invalid morse sequence"
-
-        morse_chars.append(morse_char)
-
-        i = morse.find(" ")+1
-        morse = morse[i:]
-
-    morse_chars.append(morse)
+            return "Invalid Morse sequence"
 
     string = ""
     for morse_char in morse_chars:
