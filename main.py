@@ -1,8 +1,8 @@
 import morse
 
 def help():
-    print("morse 'string' - convert a string into morse code")
-    print("string 'morse' - translate a morse code sequence")
+    print("encode 'string' - string to morse code")
+    print("decode 'morse'  - morse code to string")
 
 print(r"""
  ███▄ ▄███▓ ▒█████   ██▀███    ██████ ▓█████ 
@@ -29,11 +29,11 @@ while True:
         help()
         continue
 
-    if command[:6] == "morse ":
-        print(morse.convert(command[6:]))
+    if command[:7] == "encode ":
+        print(morse.convert(command[7:]))
         continue
 
-    if command[:7] == "string ":
+    if command[:7] == "decode ":
         print(morse.translate(command[7:]))
         continue
 
