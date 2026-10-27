@@ -41,4 +41,4 @@ while True:
         print(morse.translate(command[7:]))
         continue
 
-    print("... ?")
+    print(".. ?")
