@@ -29,6 +29,10 @@ while True:
         help()
         continue
 
+    if command == "clear":
+        print("\033[H\033[2J", end="")
+        continue
+
     if command[:7] == "encode ":
         print(morse.convert(command[7:]))
         continue
