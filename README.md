@@ -6,12 +6,13 @@ A simple command-line interface Morse code translator written in Python.
 ## Usage
 Run `main.py`.
 
-| Command | Description |
-| :------ | :---------: |
-| encode | String to Morse code |
-| decode | Morse code to string |
-| help |  |
-| exit | Quit the program |
+| Command | Description          |
+| :------ | :------------------: |
+| encode  | String to Morse code |
+| decode  | Morse code to string |
+| help    | -                    |
+| clear   | Clear the terminal   |
+| exit    | Exit the program     |
 
 ## Requirements
 - Python 3
